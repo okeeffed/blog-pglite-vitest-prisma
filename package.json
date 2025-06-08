@@ -1,0 +1,29 @@
+{
+  "name": "blog-pglite-vitest-prisma",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "vitest run",
+    "prepare": "tsx scripts/duplicate-test.ts",
+    "db:generate": "prisma generate",
+    "db:migrate": "prisma migrate dev --create-only"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@electric-sql/pglite": "^0.3.3",
+    "@faker-js/faker": "^9.8.0",
+    "@tsconfig/node20": "^20.1.5",
+    "@types/node": "^22.15.30",
+    "pglite-prisma-adapter": "^0.5.0",
+    "prisma": "6.9.0",
+    "tsx": "^4.19.4",
+    "typescript": "^5.8.3",
+    "vitest": "^3.2.2"
+  },
+  "dependencies": {
+    "@prisma/client": "6.9.0"
+  }
+}

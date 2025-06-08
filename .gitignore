@@ -1,0 +1,9 @@
+node_modules
+# Keep environment variables out of version control
+.env
+
+/generated/prisma
+
+# Ignore duplicated scripts used for examples
+src/user-repository-*
+tmp/
